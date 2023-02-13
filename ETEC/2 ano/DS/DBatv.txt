@@ -1,0 +1,39 @@
+A)	
+Entidade:
+	Produtos
+
+Atributos:
+	Codigo do Produto (PK)
+	
+	Preço
+	Nome
+	Material
+	Marca
+	Cor
+	Quantidade
+	Modelo
+	Descrição
+
+PK: o Codigo do produto é unico para cada produto.
+	
+
+
+B)
+Entidade:
+	Funcionarios
+
+Atributos:
+	Matricula (PK)
+
+	Nome
+	Salario
+	Carga Horaria
+	Cargo
+	RG
+	CPF
+	Endereço
+	Sexo
+	Data de Nascimento
+	Telefone
+	
+PK: A matricula é uma maneira de indentificar os funcionarios, tendo a mesma função do RM dos alunos das Etecs
