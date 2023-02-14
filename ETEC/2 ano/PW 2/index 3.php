@@ -8,8 +8,9 @@
 </head>
 <body>
     <?php
-        echo"Endrigo Gustavo Brandão De Oliveira ";
-        echo"Idade:16 Anos";
+        echo"Endrigo Gustavo Brandão De Oliveira <br> Idade: 16 Anos";
+        
+        
 
     ?>
     
