@@ -11,8 +11,8 @@ public class Atv_2 {
     public static void main(String[] args) {
       float num1,num2 ,num5 = 0;
       
-      num1 = Integer.parseInt(JOptionPane.showInputDialog(null, "Digite o Primeiro numero"));
-      num2 = Integer.parseInt(JOptionPane.showInputDialog(null, "Digite o segundo numero"));
+      num1 = Float.parseFloat(JOptionPane.showInputDialog(null, "Digite o Primeiro numero"));
+      num2 = Float.parseFloat(JOptionPane.showInputDialog(null, "Digite o segundo numero"));
       Diferença(num1, num2, num5);
     }
     

@@ -19,7 +19,7 @@ public class Atv_3 {
     {
         n=JOptionPane.showInputDialog("Digite seu nome");
         s=JOptionPane.showInputDialog("Digite h para Homen e m para mulher");
-        al=Integer.parseInt(JOptionPane.showInputDialog("Digite sua altura"));
+        al=Float.parseFloat(JOptionPane.showInputDialog("Digite sua altura"));
         String homen = "h";
         
         if( !s.equals(homen) )
