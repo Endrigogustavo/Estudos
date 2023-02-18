@@ -9,15 +9,17 @@ import javax.swing.JOptionPane;
 public class Atv_2 {
    
     public static void main(String[] args) {
-      float num1, num2;
-      Diferença();
-      num1 = 
-     
+      float num1,num2 ,num5 = 0;
+      
+      num1 = Integer.parseInt(JOptionPane.showInputDialog(null, "Digite o Primeiro numero"));
+      num2 = Integer.parseInt(JOptionPane.showInputDialog(null, "Digite o segundo numero"));
+      Diferença(num1, num2, num5);
     }
     
-    static void Diferença()
+    static void Diferença(float n1, float n2,float n3)
     {
-    JOptionPane.showMessageDialog(null, "Digite o Primeiro numero");
-    JOptionPane.showMessageDialog(null, "Digite o segundo numero");
+    n3 =n1-n2;
+    JOptionPane.showMessageDialog(null, "A diferença é: "+n3);
+    
     }
 }

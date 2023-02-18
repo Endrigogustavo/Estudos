@@ -10,13 +10,13 @@ public class Ex_3 {
       public static void main(String[] args) {
         int idade1, idade2;
         String nome1, nome2;
-        //Começo do metodo "Digite"
+        //Parte do dialogo"
        nome1=JOptionPane.showInputDialog("Digite o nome da 1 pessoa: ");
        idade1=Integer.parseInt(JOptionPane.showInputDialog("Digite a idade da 1 pessoa: "));
        
        nome2=JOptionPane.showInputDialog("Digite o nome da 2 pessoa: ");
        idade2=Integer.parseInt(JOptionPane.showInputDialog("Digite o nome da 2 pessoa: "));
-       
+       //Começo metodo pessoamaisvelha
        String texto = PessoaMaisVelha(nome1, idade1, nome2, idade2);
        
        JOptionPane.showMessageDialog(null, texto);
