@@ -9,8 +9,9 @@ import javax.swing.JOptionPane;
 public class Ex_4 {
     public static void main(String[] args) {
          int num;
+         //reconhecimento do numeor
      num = Integer.parseInt(JOptionPane.showInputDialog("Entre com o primeiro numero"));
-     
+     //analise par ou impar
      if (RestoPorDois(num) == 0)
      JOptionPane.showMessageDialog(null, "O numero é par. \n");
      else
@@ -19,6 +20,7 @@ public class Ex_4 {
     
      static int RestoPorDois(int a) 
      {
+         //conta par ou impar
      return a % 2;
      
      }

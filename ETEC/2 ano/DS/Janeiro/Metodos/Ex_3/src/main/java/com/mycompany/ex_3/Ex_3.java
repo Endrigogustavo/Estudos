@@ -24,6 +24,7 @@ public class Ex_3 {
     
     static String PessoaMaisVelha(String n1,int id1, String n2, int id2)
     {
+        //parte do if else para descobrir o mais velho
         if(id1 > id2)
             return n1 + " é a mais velha";
             else
