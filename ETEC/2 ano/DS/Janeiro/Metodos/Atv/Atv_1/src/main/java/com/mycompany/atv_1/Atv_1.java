@@ -14,14 +14,9 @@ public class Atv_1 {
      
      
      public static void main(String[] args) {
-         
-         LerNota();
-    
-         nome = JOptionPane.showInputDialog("Digite o seu nome: ");
-         n1 = Float.parseFloat(JOptionPane.showInputDialog("Digite um numero: "));
-         n2 = Float.parseFloat(JOptionPane.showInputDialog("Digite a segunda nota: "));
-         
-         m = calcularMedia(n1, n2);
+         nome=JOptionPane.showInputDialog(null,"Digite o seu nome: ");
+         float num =LerNota(n1,n2);
+         m = calcularMedia(num);
          if(m<7)
              JOptionPane.showMessageDialog(null,"Reprovado de ano");
          else
@@ -29,16 +24,19 @@ public class Atv_1 {
         
 }
      
-     static void LerNota()
+     static float LerNota(float num1,float num2)
      {
-     JOptionPane.showMessageDialog(null,"Digite o seu nome: ");
-     JOptionPane.showMessageDialog(null,"Digite a primeira nota: ");
-     JOptionPane.showMessageDialog(null,"Digite a segunda nota: ");
+     
+     num1= Float.parseFloat(JOptionPane.showInputDialog(null,"Digite a primeira nota: "));
+     num2= Float.parseFloat(JOptionPane.showInputDialog(null,"Digite a segunda nota: "));
+     
+     return num1 + num2;
+     
      }
      
-     static float calcularMedia(float n3, float n4)
+     static float calcularMedia(float num)
      {
-         m =(n3 + n4)/2;
+         m =num/2;
          return m;
      }
     

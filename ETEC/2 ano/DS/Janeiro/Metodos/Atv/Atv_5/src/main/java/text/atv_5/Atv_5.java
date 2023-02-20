@@ -11,6 +11,8 @@ public class Atv_5 {
 
     public static void main(String[] args) {
         float b = 0, h = 0;
+        b=Float.parseFloat(JOptionPane.showInputDialog(null, "Digite a base do triangulo: "));
+        h=Float.parseFloat(JOptionPane.showInputDialog(null, "Digite a altura do triangulo: "));
         
         hipotenusa(b, h);
        
@@ -19,8 +21,6 @@ public class Atv_5 {
     static void hipotenusa(float x, float y)
     {
         float hip;
-        x=Float.parseFloat(JOptionPane.showInputDialog(null, "Digite a base do triangulo: "));
-        y=Float.parseFloat(JOptionPane.showInputDialog(null, "Digite a altura do triangulo: "));
         
         hip= (float) ((Math.pow(x, 2) + Math.pow(y, 2)));
         

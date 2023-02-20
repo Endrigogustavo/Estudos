@@ -12,25 +12,31 @@ public class Atv_3 {
     public static void main(String[] args) {
         String sexo = null, nome = null;
         float altura = 0, ideal = 0;
-        calcularpessoideal(sexo, nome, altura,ideal);
+        
+         nome=JOptionPane.showInputDialog("Digite seu nome");
+        sexo=JOptionPane.showInputDialog("Digite h para Homen e m para mulher");
+        altura=Float.parseFloat(JOptionPane.showInputDialog("Digite sua altura"));
+        
+        
+        String text = calcularpessoideal(sexo, nome, altura,ideal);
+        
+        JOptionPane.showMessageDialog(null, text);
+      
+         
     }
     
-    static void calcularpessoideal(String s, String n, float al, float id)
+    static String calcularpessoideal(String s, String n, float al, float id)
     {
-        n=JOptionPane.showInputDialog("Digite seu nome");
-        s=JOptionPane.showInputDialog("Digite h para Homen e m para mulher");
-        al=Float.parseFloat(JOptionPane.showInputDialog("Digite sua altura"));
         String homen = "h";
-        
         if( !s.equals(homen) )
         {
             id=(float) ((62.1*al)-44.7);
-            JOptionPane.showMessageDialog(null,"peso ideal é "+id);
+            return "peso ideal é "+id;
         }
         else
         {
             id=(float) ((72.7*al)-58);
-            JOptionPane.showMessageDialog(null,"peso ideal é "+id);
+            return"peso ideal é "+id;
         }
        
         
