@@ -17,47 +17,55 @@ public class Atv_4 {
         
         if(es == 1)
         {
-            soma(num1, num2);
+            soma();
+            sair();
         }
      
         if(es == 2)
         {
-        subtracao(num1,num2);
+        subtracao();
+        sair();
         }
     
         if(es == 3)
         {
-        divisao(num1,num2);
+        divisao();
+        sair();
         }
         
         if(es == 4)
         {
-        mult(num1,num2);
+        mult();
         }
         
         if(es == 5)
         {
-        res(num1,num2);
+        res();
+        sair();
         }
          
         if(es == 6)
         {
-        dobro(num1);
+        dobro();
+        sair();
         }
           
         if(es == 7)
         {
-        quadra(num1);
+        quadra();
+        sair();
         }
         
         if(es == 8)
         {
-        cubo(num1);
+        cubo();
+        sair();
         }
         
         if(es == 9)
         {
-        raiz(num1);
+        raiz();
+        sair();
         }
         
         if(es == 0)
@@ -65,7 +73,7 @@ public class Atv_4 {
         sair();
         }
       
-        else
+        if(es > 9)
         {
         JOptionPane.showMessageDialog(null, "Erro, numero invalido");
         }
@@ -74,8 +82,10 @@ public class Atv_4 {
         
     }
     
-    static void soma(float n1, float n2)
+    static void soma()
     {
+    float n1;
+    float n2;
     float res = 0;
     n1 = Float.parseFloat(JOptionPane.showInputDialog("Digite o primeiro numero: "));
     n2 = Float.parseFloat(JOptionPane.showInputDialog("Digite o segundo numero: ")); 
@@ -83,8 +93,10 @@ public class Atv_4 {
     JOptionPane.showMessageDialog(null, "A soma dos numeros "+n1+" e "+n2+" é: "+res);
     }
     
-    static void subtracao(float n1, float n2)
+    static void subtracao()
     {
+    float n1;
+    float n2;
     float res = 0;
     n1 = Float.parseFloat(JOptionPane.showInputDialog("Digite o primeiro numero: "));
     n2 = Float.parseFloat(JOptionPane.showInputDialog("Digite o segundo numero: ")); 
@@ -92,8 +104,11 @@ public class Atv_4 {
     JOptionPane.showMessageDialog(null, "A subtração dos numeros "+n1+" e "+n2+" é: "+res);
     }
     
-    static void divisao(float n1, float n2)
+    static void divisao()
     {
+    float n1;
+    float n2;
+
     float res = 0;
     n1 = Float.parseFloat(JOptionPane.showInputDialog("Digite o primeiro numero: "));
     n2 = Float.parseFloat(JOptionPane.showInputDialog("Digite o segundo numero: ")); 
@@ -102,8 +117,11 @@ public class Atv_4 {
     }
     
     
-    static void mult(float n1, float n2)
+    static void mult()
     {
+    float n1;
+    float n2;
+
     float res = 0;
     n1 = Float.parseFloat(JOptionPane.showInputDialog("Digite o primeiro numero: "));
     n2 = Float.parseFloat(JOptionPane.showInputDialog("Digite o segundo numero: ")); 
@@ -111,8 +129,11 @@ public class Atv_4 {
     JOptionPane.showMessageDialog(null, "A divisão dos numeros "+n1+" e "+n2+" é: "+res);
     }
     
-    static void res(float n1, float n2)
+    static void res()
     {
+    float n1;
+    float n2;
+
     float res = 0;
     n1 = Float.parseFloat(JOptionPane.showInputDialog("Digite o primeiro numero: "));
     n2 = Float.parseFloat(JOptionPane.showInputDialog("Digite o segundo numero: ")); 
@@ -120,8 +141,11 @@ public class Atv_4 {
     JOptionPane.showMessageDialog(null, "A divisão dos numeros "+n1+" e "+n2+" é: "+res);
     }
     
-    static void dobro(float n1)
+    static void dobro()
     {
+        float n1;
+    
+
     float res = 0;
     n1 = Float.parseFloat(JOptionPane.showInputDialog("Digite o primeiro numero: "));
     
@@ -129,17 +153,19 @@ public class Atv_4 {
     JOptionPane.showMessageDialog(null, "O dobro de "+n1+" é: "+res);
     }
     
-    static void quadra(float n1)
+    static void quadra()
     {
+        float n1;
     float res = 0;
     n1 = Float.parseFloat(JOptionPane.showInputDialog("Digite o primeiro numero: "));
     
-    res = n1*n1;
+    res = (float) Math.pow(n1,2);
     JOptionPane.showMessageDialog(null, "O quadrado de "+n1+" é: "+res);
     }
     
-    static void cubo(float n1)
+    static void cubo()
     {
+        float n1;
     float res = 0;
     n1 = Float.parseFloat(JOptionPane.showInputDialog("Digite o primeiro numero: "));
     
@@ -147,8 +173,9 @@ public class Atv_4 {
     JOptionPane.showMessageDialog(null, "O cubo de "+n1+" é: "+res);
     }
     
-    static void raiz(float n1)
+    static void raiz()
     {
+        float n1;
     float res = 0;
     n1 = Float.parseFloat(JOptionPane.showInputDialog("Digite o primeiro numero: "));
     
@@ -163,6 +190,4 @@ public class Atv_4 {
     }
     
 
-}       
-            
-
+} 
