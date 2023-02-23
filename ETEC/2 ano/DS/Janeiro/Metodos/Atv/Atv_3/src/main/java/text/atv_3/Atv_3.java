@@ -10,7 +10,7 @@ import javax.swing.JOptionPane;
 public class Atv_3 {
 
     public static void main(String[] args) {
-        String sexo = null, nome = null;
+        String sexo = "", nome = "";
         float altura = 0, ideal = 0;
         
          nome=JOptionPane.showInputDialog("Digite seu nome");
