@@ -16,6 +16,7 @@ public class Atv_1 {
      public static void main(String[] args) {
          nome=JOptionPane.showInputDialog(null,"Digite o seu nome: ");
          float m;
+         
          float num1 =LerNota(); 
          float num2 =LerNota();
          m = calcularMedia(num1, num2);
@@ -29,12 +30,12 @@ public class Atv_1 {
      static float LerNota()
      {
          
-     return Float.parseFloat(JOptionPane.showInputDialog("Digite a primeira nota: "));
+     return Float.parseFloat(JOptionPane.showInputDialog("Digite a nota: "));
      }
      
-     static float calcularMedia(float num1, float num2)
+     static float calcularMedia(float n1, float n2)
      {
          
-         return (num1+num2)/2;
+         return (n1+n2)/2;
      }
 }

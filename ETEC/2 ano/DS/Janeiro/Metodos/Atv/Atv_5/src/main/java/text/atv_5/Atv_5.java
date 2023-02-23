@@ -14,18 +14,17 @@ public class Atv_5 {
         b=Float.parseFloat(JOptionPane.showInputDialog(null, "Digite a base do triangulo: "));
         h=Float.parseFloat(JOptionPane.showInputDialog(null, "Digite a altura do triangulo: "));
         
-        hipotenusa(b, h);
-       
+       String tes = hipotenusa(b, h);
+       JOptionPane.showMessageDialog(null,"O valor da hipotenusa de "+b+ " e " +h+ " é " +tes);
     }
     
-    static void hipotenusa(float x, float y)
+    static String hipotenusa(float x, float y)
     {
         float hip;
         
         hip= (float) ((Math.pow(x, 2) + Math.pow(y, 2)));
-        
-        JOptionPane.showMessageDialog(null,"A hipotenusa é: "+Math.sqrt(hip));
-        
+       
+        return "A hipotenusa é: "+Math.sqrt(hip);
         
     }
 }
