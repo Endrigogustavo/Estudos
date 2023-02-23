@@ -9,14 +9,16 @@ import javax.swing.JOptionPane;
 public class Atv_1 {
     
     
-     public static float n2, n1 , m;
+    
      public static String nome;
      
      
      public static void main(String[] args) {
          nome=JOptionPane.showInputDialog(null,"Digite o seu nome: ");
-         float num =LerNota(n1,n2);
-         m = calcularMedia(num);
+         float m;
+         float num1 =LerNota(); 
+         float num2 =LerNota();
+         m = calcularMedia(num1, num2);
          if(m<7)
              JOptionPane.showMessageDialog(null,"Reprovado de ano");
          else
@@ -24,20 +26,15 @@ public class Atv_1 {
         
 }
      
-     static float LerNota(float num1,float num2)
+     static float LerNota()
      {
-     
-     num1= Float.parseFloat(JOptionPane.showInputDialog(null,"Digite a primeira nota: "));
-     num2= Float.parseFloat(JOptionPane.showInputDialog(null,"Digite a segunda nota: "));
-     
-     return num1 + num2;
-     
+         
+     return Float.parseFloat(JOptionPane.showInputDialog("Digite a primeira nota: "));
      }
      
-     static float calcularMedia(float num)
+     static float calcularMedia(float num1, float num2)
      {
-         m =num/2;
-         return m;
+         
+         return (num1+num2)/2;
      }
-    
 }
