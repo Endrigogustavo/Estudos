@@ -10,7 +10,7 @@ import javax.swing.JOptionPane;
 public class Atv_4 {
 
     public static void main(String[] args) {
-        float num1 = 0, num2 = 0;
+        
         int es;
         
         es = Integer.parseInt(JOptionPane.showInputDialog(null, "Digite \n 1 para soma;\n 2 para subtração;\n 3 para divisão;\n 4 para multiplicação;\n 5 para resto de divisão;\n 6 para o dobro;\n 7 para o quadrado;\n 8 para cubo;\n 9 para raiz quadrada\n 0 para sair"));
