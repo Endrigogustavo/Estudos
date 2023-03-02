@@ -13,5 +13,7 @@ public class Principal_atv {
            //criando objeto
         Pessoa pessoa1 = new Pessoa();
         //chamando metedo na classe Ususario
+        pessoa1.inserirdados();
+        pessoa1.apresentarPessoa();
       }
 }

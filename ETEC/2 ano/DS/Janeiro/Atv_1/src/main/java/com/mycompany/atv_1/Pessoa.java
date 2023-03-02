@@ -24,12 +24,13 @@ public class Pessoa {
         this.endereco = endereco;
         this.telefone = telefone;
     }
+    
+  
 
     /**
      * @return the nome
      */
     public String getNome() {
-        nome = JOptionPane.showInputDialog("Digite seu nome");
         return nome;
     }
 
@@ -37,22 +38,21 @@ public class Pessoa {
      * @param nome the nome to set
      */
     public void setNome(String nome) {
-        this.nome = nome;
+        this.nome = JOptionPane.showInputDialog("Digite seu nome");
     }
 
     /**
      * @return the endereco
      */
     public String getEndereco() {
-        endereco = JOptionPane.showInputDialog("Digite seu nome");
         return endereco;
-    }
+    }    
 
     /**
      * @param endereco the endereco to set
      */
     public void setEndereco(String endereco) {
-        this.endereco = endereco;
+        this.endereco = JOptionPane.showInputDialog("Digite seu endereço");
     }
 
     /**
@@ -60,17 +60,29 @@ public class Pessoa {
      */
     public String getTelefone() 
     {
-        telefone = JOptionPane.showInputDialog("Digite seu nome");
         return telefone;
+    }   public void inserirdados(){
+    JOptionPane.showMessageDialog(null, "comecando o sistema de cadastro \n siga as informaçoes a seguir");
+    setNome(nome);
+    setEndereco(endereco);
+    setTelefone(telefone);
     }
 
     /**
      * @param telefone the telefone to set
      */
     public void setTelefone(String telefone) {
-        this.telefone = telefone;
+        this.telefone = JOptionPane.showInputDialog("Digite seu telefone");
     }
     
-    public 
+   
+    
+   
+    
+    public void apresentarPessoa(){
+    JOptionPane.showMessageDialog(null, "ola "+getNome()+ " seu telefone é "+getTelefone()+" e seu endereco é "+getEndereco());
+    }
+    
+    
      
 }
