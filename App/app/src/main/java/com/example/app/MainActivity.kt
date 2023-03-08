@@ -14,7 +14,7 @@ class MainActivity : AppCompatActivity() {
         val edtnome:EditText = findViewById(R.id.edtnome)
         val btncadastar:Button = findViewById(R.id.cadastrar)
         btncadastar.setOnClickListener{
-            val toast = Toast.makeText(this, edtnome.toString(), Toast.LENGTH_SHORT)
+            val toast = Toast.makeText(this, edtnome.text.toString(), Toast.LENGTH_SHORT)
             toast.show()
         }
     }
