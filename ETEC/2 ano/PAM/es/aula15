@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_gravity="center_vertical"
+    android:orientation="vertical"
+    android:layout_height="wrap_content"
+    android:layout_width="match_parent"
+    >
+    <TextView
+        android:id="@+id/txtname"
+        android:text="Cadastro"
+        android:textSize="30sp"
+        android:layout_gravity="center_horizontal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        />
+    <EditText
+        android:id="@+id/ende"
+        android:textSize="30sp"
+        android:inputType="text"
+        android:autofillHints="name"
+        android:hint="Endereço"
+        android:layout_gravity="center_horizontal"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        />
+    <EditText
+        android:id="@+id/bai"
+        android:textSize="30sp"
+        android:inputType="text"
+        android:autofillHints="name"
+        android:hint="Bairro"
+        android:layout_gravity="center_horizontal"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        />
+    <EditText
+        android:id="@+id/cep"
+        android:textSize="30sp"
+        android:inputType="text"
+        android:autofillHints="name"
+        android:hint="CEP"
+        android:layout_gravity="center_horizontal"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        />
+    <EditText
+        android:id="@+id/cid"
+        android:textSize="30sp"
+        android:inputType="text"
+        android:autofillHints="name"
+        android:hint="Cidade"
+        android:layout_gravity="center_horizontal"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        />
+    <EditText
+        android:id="@+id/est"
+        android:textSize="30sp"
+        android:inputType="text"
+        android:autofillHints="name"
+        android:hint="Estado"
+        android:layout_gravity="center_horizontal"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        />
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="30sp"
+        android:layout_gravity="center_horizontal"
+        android:id="@+id/cadastrar"
+        android:text="@string/cadastrar"
+        />
+
+</LinearLayout>
+
+
+
+
+
+package com.example.atvcadastro
+
+import androidx.appcompat.app.AppCompatActivity
+import android.os.Bundle
+import android.widget.Button
+import android.widget.EditText
+import android.widget.Toast
+import com.example.primeiroapp.R
+
+
+class MainActivity : AppCompatActivity() {
+    override fun onCreate(savedInstanceState: Bundle?) {
+        super.onCreate(savedInstanceState)
+        setContentView(R.layout.activity_main)
+
+        val ende :Button = findViewById(R.id.ende)
+        val bairro :Button = findViewById(R.id.ende)
+        val bairro :Button = findViewById(R.id.ende)
+        val bairro :Button = findViewById(R.id.ende)
+        val bairro :Button = findViewById(R.id.ende)
+        val btncadastar:Button = findViewById(R.id.cadastrar)
+        btncadastar.setOnClickListener{
+            val toast = Toast.makeText(this, edtnome.text.toString(), Toast.LENGTH_SHORT)
+            toast.show()
+        }
+
+    }
+}
