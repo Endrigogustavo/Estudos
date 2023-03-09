@@ -3,10 +3,10 @@
  * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
  */
 package com.mycompany.atv_1;
-import javax.swing.JOptionPane;
+
 /**
  *
- * @author dti
+ * @author endrigo
  */
 public class Principal_atv {
       public static void main(String[] args) {

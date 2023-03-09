@@ -61,13 +61,8 @@ public class Pessoa {
     public String getTelefone() 
     {
         return telefone;
-    }   public void inserirdados(){
-    JOptionPane.showMessageDialog(null, "comecando o sistema de cadastro \n siga as informaçoes a seguir");
-    setNome(nome);
-    setEndereco(endereco);
-    setTelefone(telefone);
-    }
-
+        
+    }   
     /**
      * @param telefone the telefone to set
      */
@@ -77,10 +72,16 @@ public class Pessoa {
     
    
     
-   
+    public void inserirdados(){
+    JOptionPane.showMessageDialog(null, "Sistema de cadastro \n siga as informaçoes a seguir");
+    setNome(nome);
+    setEndereco(endereco);
+    setTelefone(telefone);
+    }
+
     
     public void apresentarPessoa(){
-    JOptionPane.showMessageDialog(null, "ola "+getNome()+ " seu telefone é "+getTelefone()+" e seu endereco é "+getEndereco());
+    JOptionPane.showMessageDialog(null, "ola "+getNome()+ " \nseu telefone é "+getTelefone()+" \n e seu endereco é "+getEndereco());
     }
     
     
