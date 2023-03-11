@@ -1,4 +1,3 @@
-<?xml version="1.0" encoding="utf-8"?>
 <LinearLayout
     xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_gravity="center_vertical"
@@ -15,7 +14,7 @@
         android:layout_height="wrap_content"
         />
     <EditText
-        android:id="@+id/ende"
+        android:id="@+id/end"
         android:textSize="30sp"
         android:inputType="text"
         android:autofillHints="name"
@@ -70,23 +69,19 @@
         android:textSize="30sp"
         android:layout_gravity="center_horizontal"
         android:id="@+id/cadastrar"
-        android:text="@string/cadastrar"
+        android:text="cadastrar"
         />
 
 </LinearLayout>
 
-
-
-
-
-package com.example.atvcadastro
+package com.example.cadastro
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.Button
 import android.widget.EditText
 import android.widget.Toast
-import com.example.primeiroapp.R
+
 
 
 class MainActivity : AppCompatActivity() {
@@ -94,15 +89,24 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
 
-        val ende :Button = findViewById(R.id.ende)
-        val bairro :Button = findViewById(R.id.ende)
-        val bairro :Button = findViewById(R.id.ende)
-        val bairro :Button = findViewById(R.id.ende)
-        val bairro :Button = findViewById(R.id.ende)
+        val end :EditText = findViewById(R.id.end)
+        val bai :EditText = findViewById(R.id.bai)
+        val cep :EditText = findViewById(R.id.cep)
+        val cid :EditText = findViewById(R.id.cid)
+        val est :EditText = findViewById(R.id.est)
         val btncadastar:Button = findViewById(R.id.cadastrar)
         btncadastar.setOnClickListener{
-            val toast = Toast.makeText(this, edtnome.text.toString(), Toast.LENGTH_SHORT)
+
+            val toast = Toast.makeText(this, end.text.toString(), Toast.LENGTH_SHORT)
+            val toast1 = Toast.makeText(this, bai.text.toString(), Toast.LENGTH_SHORT)
+            val toast2 = Toast.makeText(this, cep.text.toString(), Toast.LENGTH_SHORT)
+            val toast3 = Toast.makeText(this, cid.text.toString(), Toast.LENGTH_SHORT)
+            val toast4 = Toast.makeText(this, est.text.toString(), Toast.LENGTH_SHORT)
             toast.show()
+            toast1.show()
+            toast2.show()
+            toast3.show()
+            toast4.show()
         }
 
     }
