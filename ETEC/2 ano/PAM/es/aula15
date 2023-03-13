@@ -97,16 +97,13 @@ class MainActivity : AppCompatActivity() {
         val btncadastar:Button = findViewById(R.id.cadastrar)
         btncadastar.setOnClickListener{
 
-            val toast = Toast.makeText(this, end.text.toString(), Toast.LENGTH_SHORT)
-            val toast1 = Toast.makeText(this, bai.text.toString(), Toast.LENGTH_SHORT)
-            val toast2 = Toast.makeText(this, cep.text.toString(), Toast.LENGTH_SHORT)
-            val toast3 = Toast.makeText(this, cid.text.toString(), Toast.LENGTH_SHORT)
-            val toast4 = Toast.makeText(this, est.text.toString(), Toast.LENGTH_SHORT)
+            val toast= Toast.makeText(this, edtNome.text.toString()
+                +"\n" + edtend.text.toString()
+                +"\n" + edtbai.text.toString()
+                +"\n" + edtcid.text.toString()
+                +"\n" + edtest.text.toString()
+                +"\n" + edtcep.text.toString(), Toast.LENGTH_SHORT)
             toast.show()
-            toast1.show()
-            toast2.show()
-            toast3.show()
-            toast4.show()
         }
 
     }
