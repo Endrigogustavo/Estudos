@@ -8,18 +8,58 @@
     >
     <TextView
         android:id="@+id/txtname"
-        android:text="@string/txtname"
+        android:text="Cadastro"
         android:textSize="30sp"
         android:layout_gravity="center_horizontal"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         />
     <EditText
-        android:id="@+id/edtnome"
+        android:id="@+id/end"
         android:textSize="30sp"
         android:inputType="text"
         android:autofillHints="name"
-        android:hint="@string/txtnomemsg"
+        android:hint="Endereço"
+        android:layout_gravity="center_horizontal"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        />
+    <EditText
+        android:id="@+id/bai"
+        android:textSize="30sp"
+        android:inputType="text"
+        android:autofillHints="name"
+        android:hint="Bairro"
+        android:layout_gravity="center_horizontal"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        />
+    <EditText
+        android:id="@+id/cep"
+        android:textSize="30sp"
+        android:inputType="text"
+        android:autofillHints="name"
+        android:hint="CEP"
+        android:layout_gravity="center_horizontal"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        />
+    <EditText
+        android:id="@+id/cid"
+        android:textSize="30sp"
+        android:inputType="text"
+        android:autofillHints="name"
+        android:hint="Cidade"
+        android:layout_gravity="center_horizontal"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        />
+    <EditText
+        android:id="@+id/est"
+        android:textSize="30sp"
+        android:inputType="text"
+        android:autofillHints="name"
+        android:hint="Estado"
         android:layout_gravity="center_horizontal"
         android:layout_width="250dp"
         android:layout_height="wrap_content"
@@ -30,7 +70,7 @@
         android:textSize="30sp"
         android:layout_gravity="center_horizontal"
         android:id="@+id/cadastrar"
-        android:text="@string/cadastrar"
+        android:text="cadastrar"
         />
 
 </LinearLayout>
