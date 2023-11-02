@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">App</string>
+    <string name="cadastrar">Cadastrar</string>
+    <string name="end">Endereço</string>
+    <string name="bai">Bairro</string>
+    <string name="cep">CEP</string>
+    <string name="est">Estado</string>
+    <string name="cid">Cidade</string>
+
+
+</resources>
